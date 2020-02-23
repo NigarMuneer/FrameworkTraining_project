@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "Adhoc2">
+<listeners>
+<listener class-name = "com.FACEBOOK.FrameworkTraining"></listener>
+</listeners>
+<test name = "Regression">
+<parameter name = "URL" value = "https://www.facebook.com"></parameter>
+<parameter name = "browser" value = "Firefox"></parameter>
+<classes>
+<class name = "Run.home_siteInherit"></class>
+<class name = "Run.ForgotPw"></class><!--  -->
+</classes>
+</test>
+<test name = "IT2">
+<parameter name = "URL" value = "https://www.facebook.com"></parameter>
+<parameter name = "browser" value = "Chrome"></parameter>
+<classes>
+<class name = "Run.home_siteInherit"></class>
+<class name = "Run.ForgotPw"></class><!--  -->
+</classes>
+</test>
+</suite>
